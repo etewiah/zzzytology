@@ -1,4 +1,9 @@
 Zzzytology::Application.routes.draw do
+  root :to => "Pages#index"
+  get "pages/index"
+
+  get "pages/about"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
