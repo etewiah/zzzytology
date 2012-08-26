@@ -1,0 +1,31 @@
+.tabbed-box
+  .tabs
+    %ul.nav.nav-tabs
+      %li.active
+        %a{:href => "#"} The idea
+      %li 
+        %a{:href => "#collaborate"} Collaborate
+
+  #content-container.tabbed-content
+    %h2 Zzzytology - because there are not enough words in the dictionary
+    %br
+    %p  This is essentially an experiment I couldn't resist.  I woke up at 4:03 am on a Sunday morning struggling to explain a concept I couldn't find a word for.  Obviously my brain was on a trip but somehow it channeled me to a keyboard and I found myself writing code for an application that would help people define words for concepts that currently cannot be described in a word.
+    %p True story!!!
+
+
+:css
+  .tabbed-content {
+
+  margin-bottom: 30px;
+  background-color: #eeeeee;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-bottom-left-radius: 6px;
+  padding: 10px;
+
+  }
+  .tabs .nav {
+  margin-bottom: 0px;
+  }
+  .nav-tabs > .active > a {
+   background-color: #eeeeee
+  }
