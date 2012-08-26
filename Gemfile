@@ -1,11 +1,22 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
+gem 'heroku'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+#gem "yaml_db"
+#gem 'sqlite3'
+
+gem "pg", :group => :production
+gem "sqlite3-ruby", :group => :development
+
+# adding figaro for ENV configs
+gem "figaro"
+
+gem "haml"
+gem 'twitter-bootstrap-rails'
 
 
 # Gems used only for assets and not required
@@ -19,6 +30,29 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
+
+
+
+group :development do
+  gem 'ffaker'
+  gem 'guard-rspec'
+  gem 'growl'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'debugger'
+  gem "rails-erd"
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem "shoulda-matchers"
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'jasmine'
+  gem 'simplecov', :require => false
+end
+
 
 gem 'jquery-rails'
 
