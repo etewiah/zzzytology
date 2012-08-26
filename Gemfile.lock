@@ -75,6 +75,10 @@ GEM
     guard-rspec (1.2.1)
       guard (>= 1.1)
     haml (3.1.7)
+    handlebars_assets (0.6.4)
+      execjs (>= 1.2.9)
+      sprockets (>= 2.0.3)
+      tilt
     heroku (2.30.5)
       heroku-api (~> 0.3.4)
       launchy (>= 0.3.2)
@@ -239,6 +243,7 @@ DEPENDENCIES
   growl
   guard-rspec
   haml
+  handlebars_assets
   heroku
   jasmine
   jquery-rails
