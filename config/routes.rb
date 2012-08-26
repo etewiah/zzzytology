@@ -1,6 +1,8 @@
 Zzzytology::Application.routes.draw do
-  resources :page_contents
 
+  scope 'api' do
+   resources :page_contents
+  end
   root :to => "Pages#index"
   get "pages/index"
 

@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+PageContent.create(
+    title:  "Zzzytology - because there are not enough words in the dictionary",
+    content: "<p>  This is essentially an experiment I couldn't resist.  I woke up at 4:03 am on a Sunday morning struggling to explain a concept I couldn't find a word for.  Obviously my brain was on a trip but somehow it channeled me to a keyboard and I found myself writing code for an application that would help people define words for concepts that currently cannot be described in a word.
+    </p><p>
+    True story!!!
+    </p>",
+    tab_name: "home"
+
+	)
