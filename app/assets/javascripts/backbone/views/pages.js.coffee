@@ -3,8 +3,11 @@ class Zzzytology.Views.PagesHome extends Backbone.View
   template: HandlebarsTemplates['pages']
 
   initialize: ->
-    @collection.on('reset', @render, this)
+    @model.on('reset', @render, this)
 
   render: ->
-          $(@el).html(@template(pagecontent: @collection.toJSON() ))
-          this        
+    if @model
+      $(@el).html(@template(pagecontent: [ @model.toJSON() ] ))
+      this
+    else
+      this        

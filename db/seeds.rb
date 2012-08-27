@@ -14,3 +14,12 @@ PageContent.create(
     tab_name: "home"
 
 	)
+PageContent.create(
+    title:  "Collaborate with me!!",
+    content: "<p>I need some decent hackers to work on this with...
+    </p><p>
+    True story!!!
+    </p>",
+    tab_name: "collaborate"
+
+	)
