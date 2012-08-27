@@ -1,8 +1,38 @@
 <div class="row">
     <div class="span8">
-	    <form id="new_word">
-		  <input type="text" name="name" id="new_word_name">
-		  <input type="submit" value="Add">
+	    <form class="form-horizontal" id="new_word">
+
+	    <fieldset>
+
+<legend>Newly invented word</legend>
+
+	<div class="control-group">
+		<label class="control-label">Word</label>
+		<div class="controls">
+			<input type="text" class="input-xlarge" id="new_word_name" name="name" rel="popover" data-content="Enter your first and last name." data-original-title="Full Name">
+		</div>
+	</div>
+
+    <div class="control-group">
+		<label class="control-label">Definition</label>
+		<div class="controls">
+			<textarea class="text span6"  cols="30" rows="5" id="new_word_definition" name="definition" rel="popover" data-content="Enter your first and last name." data-original-title="Full Name"></textarea>
+		</div>
+	</div>
+
+
+
+
+		  <div class="controls">
+
+		  <div class="form-actions">
+		    <input class="btn btn-primary" name="commit" type="submit" value="Create Word">
+		    <input class="btn btn-danger" name="commit" type="reset" value="Cancel">
+		  </div>
+				
+		  </div>
+
+		  </fieldset>
 		</form>
 
 		<ul id="words"></ul>
