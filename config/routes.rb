@@ -1,5 +1,7 @@
 Zzzytology::Application.routes.draw do
 
+  resources :liffs
+
   scope 'api' do
    resources :page_contents
   end

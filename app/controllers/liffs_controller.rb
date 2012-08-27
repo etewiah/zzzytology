@@ -1,0 +1,2 @@
+class LiffsController < ApplicationController
+end
