@@ -1,0 +1,1 @@
+class Zzzytology.Models.Word extends Backbone.Model

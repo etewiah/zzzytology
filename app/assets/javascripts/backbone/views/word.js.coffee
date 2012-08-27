@@ -1,10 +1,10 @@
-class Zzzytology.Views.Words extends Backbone.View
+class Zzzytology.Views.Word extends Backbone.View
 
-  template: HandlebarsTemplates['words']
+  template: HandlebarsTemplates['word']
 
   initialize: ->
     @collection.on('reset', @render, this)
-    @collection.on('add', @render, this)
+    @collection.on('add', @appendWord, this)
   events:
     "click #new_word_btn": "newWord"
 
@@ -18,3 +18,7 @@ class Zzzytology.Views.Words extends Backbone.View
       this
     else
       this        
+
+  appendWord: (entry) =>
+    view = new Raffler.Views.Entry(model: entry)
+    @$('#entries').append(view.render().el)

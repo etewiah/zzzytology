@@ -10,11 +10,11 @@ class LiffsController < ApplicationController
   end
   
   def create
-    respond_with Liff.create(params[:page_content])
+    respond_with Liff.create(params[:liff])
   end
   
   def update
-    respond_with Liff.update(params[:id], params[:page_content])
+    respond_with Liff.update(params[:id], params[:liff])
   end
   
   def destroy
