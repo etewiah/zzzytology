@@ -29,3 +29,7 @@
   .nav-tabs > .active > a {
    background-color: #eeeeee
   }
+
+:javascript
+  var PageContentColl = new Backbone.Collection;
+  PageContentColl.reset(#{@pagecontent.to_json})
