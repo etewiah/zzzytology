@@ -4,17 +4,21 @@ class Zzzytology.Views.Words extends Backbone.View
 
   initialize: ->
     @collection.on('reset', @render, this)
-    @collection.on('add', @render, this)
+    @collection.on('add', @appendWord, this)
   events:
-    "click #new_word_btn": "newWord"
+    "submit #new_word": "newWord"
 
   newWord: (e) ->
     @collection.create(word: '44', definition: 'blaa blaaa')
 
   render: ->
     if @collection
-      console.log(@collection.toJSON())
-      $(@el).html(@template(pagecontent:  @collection.toJSON() ))
+      $(@el).html(@template())
+      @collection.each(@appendWord)
       this
     else
       this        
+
+  appendWord: (entry) =>
+    view = new Zzzytology.Views.Word(model: entry)
+    @$('#words').append(view.render().el)
