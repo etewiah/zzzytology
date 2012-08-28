@@ -1,3 +1,4 @@
+/*
 $(document).ready(function()
 {
 // Popover 
@@ -42,4 +43,6 @@ $(element).parents('.control-group').removeClass('error');
 $(element).parents('.control-group').addClass('success');
 }
 });
+
 });
+*/

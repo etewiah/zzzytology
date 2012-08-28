@@ -1,15 +1,17 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-top: 10px;
-  border-top: solid 1px #CCC;
+#words_container {
+		ul {
+		  list-style: none;
+		  margin: 0;
+		  padding: 0;
+		  margin-top: 10px;
+		  border-top: solid 1px #CCC;
+		}
 }
 
-li {
+#words_container li {
   border-bottom: solid 1px #CCC;
   padding: 10px 10px;
   font-size: 16px;

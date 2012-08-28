@@ -3,7 +3,7 @@ module ApplicationHelper
 	  javascript_tag("
 
 		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-34346858-1']);
+		  _gaq.push(['_setAccount', '#{ENV['GOOGLE_ANALYTICS_ACT']}' ]);
 		  _gaq.push(['_trackPageview']);
 
 		  (function() {
