@@ -9,6 +9,7 @@ class Zzzytology.Views.Words extends Backbone.View
     "submit #new_word": "newWord"
 
   newWord: (e) ->
+    e.preventDefault()
     @collection.create(word: $('#new_word_name').val(), definition: $('#new_word_definition').val())
 
   render: ->
