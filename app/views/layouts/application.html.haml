@@ -1,0 +1,36 @@
+!!!
+%html
+  %head
+    %title Zzzytology
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"}
+    %link{:href => "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css", :rel => "stylesheet", :type => "text/css"}/
+    = yield :head
+    = javascript_tag yield :javascript
+    = google_analytics_js
+    = csrf_meta_tags
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand{:href => "../"} Zzzytology
+          %ul.nav.pull-right
+            %li
+              %a{:href => "#"} About
+    #mainContainer.container
+      .row
+        .span9
+          = yield
+        .span3
+          .well.sidebar-nav
+            #fb-root
+            .fb-like{"data-send" => "true", "data-layout" => "button_count", "data-show-faces" => "true", "data-width" => "350"}
+          .well.sidebar-nav
+            %g:plusone{"annotation" => "inline"}
+          %script{:charset => "utf-8", :src => "http://widgets.twimg.com/j/2/widget.js"}
+          #twtr-widg
