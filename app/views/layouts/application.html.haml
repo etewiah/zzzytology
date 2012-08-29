@@ -41,3 +41,8 @@
             %g:plusone{"annotation" => "inline"}
           %script{:charset => "utf-8", :src => "http://widgets.twimg.com/j/2/widget.js"}
           #twtr-widg
+
+:javascript
+  $(document).ready(function() {
+    return Zzzytology.init("#{backbone_root_path}");
+  });

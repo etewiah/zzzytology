@@ -1,0 +1,13 @@
+window.Zzzytology =
+  Models: {}
+  Collections: {}
+  Views: {}
+  Routers: {}
+  #init: -> alert 'Hello from Backbone!'
+  init: (basepath) ->
+    if  basepath == "/pages/about" 
+      new Zzzytology.Routers.Contents
+    else
+      new Zzzytology.Routers.Words
+    Backbone.history.start()
+

@@ -15,6 +15,10 @@ module ApplicationHelper
 	  ")
 	end
 
+  def backbone_root_path
+    current_page?(root_path) ? "" : "/pages/about"
+  end
+  
   def main_topnav_tab(href, label)
 
     location_is_home = ( current_page?(root_path) ? true : false)
