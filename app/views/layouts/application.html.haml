@@ -25,19 +25,19 @@
             %span.icon-bar
             %span.icon-bar
           %a.brand{:href => "../"} Zzzytology
-          %ul.nav.pull-right
+          %ul.nav{ :style => "margin-left:600px" }
             = main_topnav_tab("/", "Home")
             = main_topnav_tab("/pages/about", "About")
 
     #mainContainer.container
       .row
-        .span9
+        .span9{ :style => "margin-top:30px" }
           = yield
-        .span3{ :style => "margin-top:30px" }
-          .well.sidebar-nav
+        .span3{ :style => "margin-top:30px; " }
+          .well.sidebar-nav.affix{ :style => "margin-top:30px; width:200px " }
             #fb-root
             .fb-like{"data-send" => "true", "data-layout" => "button_count", "data-show-faces" => "true", "data-width" => "350"}
-          .well.sidebar-nav
+          .well.sidebar-nav.affix{ :style => "margin-top:120px; width:200px  " }
             %g:plusone{"annotation" => "inline"}
           %script{:charset => "utf-8", :src => "http://widgets.twimg.com/j/2/widget.js"}
           #twtr-widg
@@ -46,3 +46,12 @@
   $(document).ready(function() {
     return Zzzytology.init("#{backbone_root_path}");
   });
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    //js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=198304550296472";
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=#{ ENV["FACEBOOK_KEY"] }";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
