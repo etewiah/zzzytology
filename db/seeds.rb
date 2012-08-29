@@ -11,6 +11,10 @@ Liff.create(
     word: "Aasleagh",
     definition: "A liqueur made only for drinking at the end of a revoltingly long bottle party when all the drinkable drink has been drunk"
     )
+    Liff.create(
+    word: "Youzabomb",
+    definition: "Something of a last resort. Handles whatever other stuff can't handle. Example: Imagine different people giving directions. The last one in the line is youzabomb."
+    )
 =end
 
 PageContent.create(
