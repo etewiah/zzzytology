@@ -1,7 +1,7 @@
 class Zzzytology.Routers.Words extends Backbone.Router
   routes:
     '': 'words',
-    'words': 'words'
+    '*all': 'words'
 
   initialize: ->
     @wordsCollection = new Zzzytology.Collections.Words()
@@ -10,5 +10,5 @@ class Zzzytology.Routers.Words extends Backbone.Router
   words: ->
     view = new Zzzytology.Views.Words(collection: @wordsCollection )
     $('a[href=#words]').tab('show')
-    $('#content-container').html(view.render().el)
+    $('#words-container').html(view.render().el)
 

@@ -1,85 +1,189 @@
 
+<div class="row" id="new_word_row"> 
+
+  <a href="#myModal" role="button" class="btn" style="margin-top:30px;margin-left:30px" data-toggle="modal">Launch demo modal</a>
+
+</div>
+
+<div id="words-container"></div>
 
 
-    <div id="content-container"></div>
 
-    <!-- Docs nav
-    ================================================== -->
-    <div class="row">
-      <div class="span3 bs-docs-sidebar" >
-        <ul class="nav nav-list bs-docs-sidenav affix" style="overflow-y:scroll; height:400px" >
-          <li><a href="#overview"><i class="icon-chevron-right"></i> Overview 1</a></li>
-          <li><a href="#transitions"><i class="icon-chevron-right"></i> Transitions</a></li>
-          <li><a href="#modals"><i class="icon-chevron-right"></i> Modal</a></li>
-          <li><a href="#dropdowns"><i class="icon-chevron-right"></i> Dropdown</a></li>
-          <li><a href="#scrollspy"><i class="icon-chevron-right"></i> Scrollspy</a></li>
-          <li><a href="#tabs"><i class="icon-chevron-right"></i> Tab</a></li>
-          <li><a href="#tooltips"><i class="icon-chevron-right"></i> Tooltip</a></li>
-          <li><a href="#popovers"><i class="icon-chevron-right"></i> Popover</a></li>
-          <li><a href="#alerts"><i class="icon-chevron-right"></i> Alert</a></li>
-          <li><a href="#buttons"><i class="icon-chevron-right"></i> Button</a></li>
-          <li><a href="#collapse"><i class="icon-chevron-right"></i> Collapse</a></li>
-          <li><a href="#carousel"><i class="icon-chevron-right"></i> Carousel</a></li>
-          <li><a href="#typeahead"><i class="icon-chevron-right"></i> Typeahead</a></li>
-          <li><a href="#affix"><i class="icon-chevron-right"></i> Affix</a></li>
-        </ul>
+<!-- Docs nav
+    ================================================== 
+<div class="row" style="">
+  <div class="span3 bs-docs-sidebar" >
+    <ul class="nav nav-list bs-docs-sidenav affix" style="overflow-y:scroll; height:400px" >
+      <li>
+        <a href="#overview"> <i class="icon-chevron-right"></i>
+          Overview 1
+        </a>
+      </li>
+      <li>
+        <a href="#transitions"> <i class="icon-chevron-right"></i>
+          Transitions
+        </a>
+      </li>
+      <li>
+        <a href="#modals">
+          <i class="icon-chevron-right"></i>
+          Modal
+        </a>
+      </li>
+      <li>
+        <a href="#dropdowns">
+          <i class="icon-chevron-right"></i>
+          Dropdown
+        </a>
+      </li>
+      <li>
+        <a href="#scrollspy">
+          <i class="icon-chevron-right"></i>
+          Scrollspy
+        </a>
+      </li>
+      <li>
+        <a href="#tabs">
+          <i class="icon-chevron-right"></i>
+          Tab
+        </a>
+      </li>
+      <li>
+        <a href="#tooltips">
+          <i class="icon-chevron-right"></i>
+          Tooltip
+        </a>
+      </li>
+      <li>
+        <a href="#popovers">
+          <i class="icon-chevron-right"></i>
+          Popover
+        </a>
+      </li>
+      <li>
+        <a href="#alerts">
+          <i class="icon-chevron-right"></i>
+          Alert
+        </a>
+      </li>
+      <li>
+        <a href="#buttons">
+          <i class="icon-chevron-right"></i>
+          Button
+        </a>
+      </li>
+      <li>
+        <a href="#collapse">
+          <i class="icon-chevron-right"></i>
+          Collapse
+        </a>
+      </li>
+      <li>
+        <a href="#carousel">
+          <i class="icon-chevron-right"></i>
+          Carousel
+        </a>
+      </li>
+      <li>
+        <a href="#typeahead">
+          <i class="icon-chevron-right"></i>
+          Typeahead
+        </a>
+      </li>
+      <li>
+        <a href="#affix">
+          <i class="icon-chevron-right"></i>
+          Affix
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="span6">
+
+
+
+
+    <section id="overview">
+      <div class="page-header">
+        <h1>JavaScript in Bootstrap</h1>
       </div>
 
+      <h3>Individual or compiled</h3>
+      <p>
+        If you have downloaded the latest version of Bootstrap, both <strong>bootstrap.js</strong>
+        and <strong>bootstrap.min.js</strong>
+        contain all of the plugins listed on this page.
+      </p>
 
-      <div class="span6">
+      <h3>Data attributes</h3>
+      <p>
+        You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.
+      </p>
+    </section>
 
-
-        <!-- Overview
-        ================================================== -->
-        <section id="overview">
-          <div class="page-header">
-            <h1>JavaScript in Bootstrap</h1>
-          </div>
-
-          <h3>Individual or compiled</h3>
-          <p>If you have downloaded the latest version of Bootstrap, both <strong>bootstrap.js</strong> and <strong>bootstrap.min.js</strong> contain all of the plugins listed on this page.</p>
-
-          <h3>Data attributes</h3>
-          <p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.</p>
-        </section>
-
-                <section id="transitions">
-          <div class="page-header">
-            <h1>Trans</h1>
-          </div>
-
-          <h3>Individual or compiled</h3>
-          <p>If you have downloaded the latest version of Bootstrap, both <strong>bootstrap.js</strong> and <strong>bootstrap.min.js</strong> contain all of the plugins listed on this page.</p>
-
-          <h3>Data attributes</h3>
-          <p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.</p>
-        </section>
-
-                <section id="tabs">
-          <div class="page-header">
-            <h1>Tabs</h1>
-          </div>
-
-          <h3>Individual or compiled</h3>
-          <p>If you have downloaded the latest version of Bootstrap, both <strong>bootstrap.js</strong> and <strong>bootstrap.min.js</strong> contain all of the plugins listed on this page.</p>
-
-          <h3>Data attributes</h3>
-          <p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.</p>
-        </section>
-
-                <section id="overview">
-          <div class="page-header">
-            <h1>JavaScript in Bootstrap</h1>
-          </div>
-
-          <h3>Individual or compiled</h3>
-          <p>If you have downloaded the latest version of Bootstrap, both <strong>bootstrap.js</strong> and <strong>bootstrap.min.js</strong> contain all of the plugins listed on this page.</p>
-
-          <h3>Data attributes</h3>
-          <p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.</p>
-        </section>
-
+    <section id="transitions">
+      <div class="page-header">
+        <h1>Trans</h1>
       </div>
 
-    </div>
+      <h3>Individual or compiled</h3>
+      <p>
+        If you have downloaded the latest version of Bootstrap, both
+        <strong>bootstrap.js</strong>
+        and
+        <strong>bootstrap.min.js</strong>
+        contain all of the plugins listed on this page.
+      </p>
 
+      <h3>Data attributes</h3>
+      <p>
+        You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.
+      </p>
+    </section>
+
+    <section id="tabs">
+      <div class="page-header">
+        <h1>Tabs</h1>
+      </div>
+
+      <h3>Individual or compiled</h3>
+      <p>
+        If you have downloaded the latest version of Bootstrap, both
+        <strong>bootstrap.js</strong>
+        and
+        <strong>bootstrap.min.js</strong>
+        contain all of the plugins listed on this page.
+      </p>
+
+      <h3>Data attributes</h3>
+      <p>
+        You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.
+      </p>
+    </section>
+
+    <section id="overview">
+      <div class="page-header">
+        <h1>JavaScript in Bootstrap</h1>
+      </div>
+
+      <h3>Individual or compiled</h3>
+      <p>
+        If you have downloaded the latest version of Bootstrap, both
+        <strong>bootstrap.js</strong>
+        and
+        <strong>bootstrap.min.js</strong>
+        contain all of the plugins listed on this page.
+      </p>
+
+      <h3>Data attributes</h3>
+      <p>
+        You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.
+      </p>
+    </section>
+
+  </div>
+
+</div>
+
+-->
