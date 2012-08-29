@@ -26,8 +26,9 @@
             %span.icon-bar
           %a.brand{:href => "../"} Zzzytology
           %ul.nav.pull-right
-            %li
-              %a{:href => "#"} About
+            = main_topnav_tab("/", "Home")
+            = main_topnav_tab("/pages/about", "About")
+
     #mainContainer.container
       .row
         .span9

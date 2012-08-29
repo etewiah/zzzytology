@@ -1,8 +1,9 @@
 class PagesController < ApplicationController
   def index
-  	@pagecontent = PageContent.all
+  	@pagecontent = ""
   end
 
   def about
+  	@pagecontent = PageContent.all
   end
 end
