@@ -38,9 +38,10 @@ Liff.create(
     )
 
 
-
-
-
+    Liff.create(
+    word: "Youzabomb",
+    definition: "Something of a last resort. Handles whatever other stuff can't handle. Example: Imagine different people giving directions. The last one in the line is youzabomb."
+    )
 
 PageContent.create(
     title:  "Zzzytology - because there are not enough words in the dictionary",
