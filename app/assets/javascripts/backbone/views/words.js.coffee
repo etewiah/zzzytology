@@ -4,14 +4,15 @@ class Zzzytology.Views.Words extends Backbone.View
 
   initialize: ->
     @collection.on('reset', @render, this)
-    @collection.on('add', @appendWord, this)
+    @collection.on('add', @render, this)
   events:
     "submit #new_word": "newWord"
 
   newWord: (e) ->
     e.preventDefault()
-    @collection.create(word: $('#new_word_name').val(), definition: $('#new_word_definition').val())
     $('#myModal').modal('hide')
+    @collection.create(word: $('#new_word_name').val(), definition: $('#new_word_definition').val())
+    
 
   render: ->
     if @collection
