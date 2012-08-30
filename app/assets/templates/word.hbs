@@ -1,7 +1,8 @@
-<section class="thumbnail" id="{{ word.word }}">
-  <div class="page-header">
-    <h3>{{ word.word }}</h3>
+<section id="{{ word.word }}">
+  <div class="thumbnail"  style="padding-bottom:25px" >
+	  <h3>{{ word.word }}</h3>
+	  {{{ word.definition }}}
+	  </br>
+	  <button class="btn btn-mini pull-right" type="button" >Edit</button>
   </div>
-
-  {{{ word.definition }}}
 </section>

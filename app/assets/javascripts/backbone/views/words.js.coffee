@@ -1,6 +1,6 @@
 class Zzzytology.Views.Words extends Backbone.View
-
   template: HandlebarsTemplates['words']
+
 
   initialize: ->
     @collection.on('reset', @render, this)
@@ -23,6 +23,6 @@ class Zzzytology.Views.Words extends Backbone.View
 
   appendWord: (entry) =>
     view = new Zzzytology.Views.Word(model: entry)
-    @$('#words_container').append(view.render().el)
+    @$('#words_scroll').append(view.render().el)
     navigation_view = new Zzzytology.Views.WordNavigation(model: entry)
     @$('#words_navigation_container').append(navigation_view.render().el)
