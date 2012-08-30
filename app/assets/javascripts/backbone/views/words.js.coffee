@@ -23,6 +23,6 @@ class Zzzytology.Views.Words extends Backbone.View
 
   appendWord: (entry) =>
     view = new Zzzytology.Views.Word(model: entry)
-    @$('#words').append(view.render().el)
+    @$('#words_container').append(view.render().el)
     navigation_view = new Zzzytology.Views.WordNavigation(model: entry)
     @$('#words_navigation_container').append(navigation_view.render().el)

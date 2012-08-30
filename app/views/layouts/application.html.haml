@@ -6,6 +6,7 @@
     %meta(itemprop="name" content="Zzzytology")
     %meta(itemprop="description" content="Zzzytology is fun way to create and discover new words.")
     %meta(name="keywords" content="Zzzytology,Inventing Words,liff,sniglet")
+    %meta(name="msvalidate.01" content="C3BB1D13A544DC5FDE26074DCF649469")
     %title Zzzytology: the last word in invented words ;)
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
@@ -30,19 +31,29 @@
           %ul.nav{ :style => "margin-left:600px" }
             = main_topnav_tab("/", "Home")
             = main_topnav_tab("/pages/about", "About")
+    .hero-unit.span12{ :style => "padding: 10px;margin-left:60px" }
+      .container
+        %h3
+          Zzzytology is the place to find and create words that need to exist.
+        %p 
+          Currently, this site is a work in progress but you can create a word.  I promise I will preserve any words that are created now :)
 
     #mainContainer.container
       .row
-        .span9{ :style => "margin-top:30px" }
+        .span9{ :style => "margin-top:0px" }
           = yield
-        .span3{ :style => "margin-top:30px; " }
-          .well.sidebar-nav.affix{ :style => "margin-top:30px; width:200px " }
+        .span3{ :style => "margin-top:0px; " }
+          .well.sidebar-nav.affix{ :style => "top:180px; width:200px " }
             #fb-root
             .fb-like{"data-send" => "true", "data-layout" => "button_count", "data-show-faces" => "true", "data-width" => "350"}
-          .well.sidebar-nav.affix{ :style => "margin-top:120px; width:200px  " }
+          .well.sidebar-nav.affix{ :style => "top:260px; width:200px  " }
             %g:plusone{"annotation" => "inline"}
           %script{:charset => "utf-8", :src => "http://widgets.twimg.com/j/2/widget.js"}
           #twtr-widg
+
+
+
+
 
 :javascript
   $(document).ready(function() {
