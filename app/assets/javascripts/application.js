@@ -17,6 +17,10 @@
 //= require underscore.1.3.3.js
 //= require backbone.0.9.2.js
 //= require handlebars
-//= require_tree ../templates
 //= require zzzytology
+//= require_tree ../templates
+//= require_tree .//backbone/models
+//= require_tree .//backbone/collections
+//= require_tree .//backbone/views
+//= require_tree .//backbone/routers
 //= require_tree .
