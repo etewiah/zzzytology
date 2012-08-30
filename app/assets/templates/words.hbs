@@ -3,7 +3,7 @@
 	<!-- Start scroll spy -->
 
 	<div class="span3 bs-docs-sidebar">
-		<ul class="nav nav-list bs-docs-sidenav affix" id="words_navigation_container" style="overflow-y:scroll; height:400px;margin-top:60px" >
+		<ul class="nav nav-list bs-docs-sidenav affix" id="words_navigation_container" style="overflow-y:auto; max-height:800px;margin-top:60px" >
 		</ul>
 
 	</div>
@@ -16,16 +16,12 @@
 		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none; ">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h3 id="myModalLabel">Modal Heading</h3>
+				<h3 id="myModalLabel">Create a new word</h3>
 			</div>
 
 			<div class="modal-body">
-
 				<form class="form-horizontal" id="new_word">
-
-					<fieldset>
-
-						<legend>Newly invented word</legend>
+				
 
 						<div class="control-group">
 							<label class="control-label">Word</label>
@@ -36,46 +32,26 @@
 						<div class="control-group">
 							<label class="control-label">Definition</label>
 							<div class="controls">
-								<textarea class="text span6"  cols="5" rows="2" id="new_word_definition" name="definition" rel="popover" data-content="Enter your first and last name." data-original-title="Full Name"></textarea>
+								<textarea class="text span6"
+							      style="width:250px"
+								  rows="10" id="new_word_definition" name="definition" rel="popover" data-content="Enter your first and last name." data-original-title="Full Name"></textarea>
 							</div>
 						</div>
 
-						<div class="controls">
+				
 
-							<div class="form-actions">
-								<input class="btn btn-primary" name="commit" type="submit" value="Create Word">
-								<input class="btn btn-danger" name="cancel" data-dismiss="modal" type="reset" value="Cancel"></div>
+					<div class="modal-footer">
+						<input class="btn btn-primary" name="commit" type="submit" value="Create Word">
+						<input class="btn btn-danger" name="cancel" data-dismiss="modal" type="reset" value="Cancel">
 
-						</div>
+					</div>
 
-					</fieldset>
+
 				</form>
 
-				<h4>Text in a modal</h4>
-				<p>
-					Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.
-				</p>
-
-				<h4>Popover in a modal</h4>
-				<p>
-					This
-					<a href="#" role="button" class="btn popover-test" data-content="And here's some amazing content. It's very engaging. right?" data-original-title="A Title">button</a>
-					should trigger a popover on hover.
-				</p>
-
-				<h4>Tooltips in a modal</h4>
-				<p>
-					<a href="#" class="tooltip-test" data-original-title="Tooltip">This link</a>
-					and
-					<a href="#" class="tooltip-test" data-original-title="Tooltip">that link</a>
-					should have tooltips on hover.
-				</p>
-
 			</div>
-			<div class="modal-footer">
-				<button class="btn" data-dismiss="modal">Close</button>
-				<button class="btn btn-primary">Save changes</button>
-			</div>
+
+
 		</div>
 
 		<div id="words_container">

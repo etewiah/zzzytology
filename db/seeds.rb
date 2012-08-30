@@ -7,11 +7,40 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 =begin
+
+=end
+
 Liff.create(
     word: "Aasleagh",
     definition: "A liqueur made only for drinking at the end of a revoltingly long bottle party when all the drinkable drink has been drunk"
     )
-=end
+
+Liff.create(
+    word: "Glander",
+    definition: <<HERE
+        Test hedfsddfs
+HERE
+    )
+
+Liff.create(
+    word: "Aasleagh2",
+    definition: "A liqueur made only for drinking at the end of a revoltingly long bottle party when all the drinkable drink has been drunk"
+    )
+
+Liff.create(
+    word: "Aasleagh3",
+    definition: "A liqueur made only for drinking at the end of a revoltingly long bottle party when all the drinkable drink has been drunk"
+    )
+
+Liff.create(
+    word: "Aasleagh4",
+    definition: "A liqueur made only for drinking at the end of a revoltingly long bottle party when all the drinkable drink has been drunk"
+    )
+
+
+
+
+
 
 PageContent.create(
     title:  "Zzzytology - because there are not enough words in the dictionary",
