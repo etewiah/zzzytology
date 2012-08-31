@@ -10,7 +10,10 @@ class Zzzytology.Views.Words extends Backbone.View
     "click .word-navigate" : "navigateWord"
 
   navigateWord: (e) ->
-    $(e.currentTarget).addClass("active")
+    e.preventDefault()
+    target_hrf = $(e.currentTarget).data("target_word").hrf
+    $('#' + target_hrf)[0].scrollIntoView()
+    #$(e.currentTarget).addClass("active")
 
 
   newWord: (e) ->
