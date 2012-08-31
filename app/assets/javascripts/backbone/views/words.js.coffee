@@ -7,6 +7,11 @@ class Zzzytology.Views.Words extends Backbone.View
     @collection.on('add', @render, this)
   events:
     "submit #new_word": "newWord"
+    "click .word-navigate" : "navigateWord"
+
+  navigateWord: (e) ->
+    $(e.currentTarget).addClass("active")
+
 
   newWord: (e) ->
     e.preventDefault()

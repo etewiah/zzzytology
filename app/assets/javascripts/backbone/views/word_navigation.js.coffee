@@ -9,7 +9,7 @@ class Zzzytology.Views.WordNavigation extends Backbone.View
   render: ->
     if @model
       $(@el).html(@template(word: @model.toJSON() ))
-      $(@el).attr('class', '')
+      $(@el).attr('class', 'word-navigate')
       this
     else
       this        

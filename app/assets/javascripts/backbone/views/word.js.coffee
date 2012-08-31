@@ -7,7 +7,11 @@ class Zzzytology.Views.Word extends Backbone.View
 
   events: ->
     "click .edit-word" : "editWord"
+    "click .word-navigate" : "navigateWord"
 
+  navigateWord: (e) ->
+    debugger
+    e.addClass("active")
   
   editWord: (e) ->
     view = new Zzzytology.Views.EditWord(model: @model)

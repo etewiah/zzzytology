@@ -16,7 +16,7 @@
     = javascript_tag yield :javascript
     = google_analytics_js
     = csrf_meta_tags
-  %body
+  %body{ "data-spy" => "scroll", "data-target" => ".bs-docs-sidebar"}
     %a{ :href => "https://github.com/etewiah/zzzytology" }
       %img{ :src => "http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png", :style => "position: fixed; right: 0; top: 0; z-index: 1033" }
     .navbar.navbar-fixed-top
