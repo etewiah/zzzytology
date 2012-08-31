@@ -2,9 +2,17 @@ class Zzzytology.Views.Word extends Backbone.View
   template: HandlebarsTemplates['word']
   tagName: 'li'
 
-
   initialize: ->
-    @model.on('reset', @render, this)
+    @model.on('change', @render, this)
+
+  events: ->
+    "click .edit-word" : "editWord"
+
+  
+  editWord: (e) ->
+    view = new Zzzytology.Views.EditWord(model: @model)
+    @$(".thumbnail").append(view.render().el)
+    @$("#editWordModal").modal('show')
 
   render: ->
     if @model

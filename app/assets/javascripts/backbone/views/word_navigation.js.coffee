@@ -4,7 +4,7 @@ class Zzzytology.Views.WordNavigation extends Backbone.View
 
 
   initialize: ->
-    @model.on('reset', @render, this)
+    @model.on('change', @render, this)
 
   render: ->
     if @model

@@ -1,0 +1,34 @@
+<div id="editWordModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 id="myModalLabel">Edit word</h3>
+	</div>
+
+	<div class="modal-body">
+		<form class="form-horizontal" id="edit_word">
+
+			<div class="control-group">
+				<label class="control-label">Word</label>
+				<div class="controls">
+					<input type="text" class="input-xlarge" id="edit_word_name" name="name" rel="popover" data-content="Enter your first and last name." data-original-title="Full Name" value={{ word.word }}>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label">Definition</label>
+				<div class="controls">
+					<textarea class="text span6"
+					      style="width:250px"
+						  rows="10" id="edit_word_definition" name="definition" rel="popover" data-content="Enter definition." data-original-title="Definition">{{{ word.definition }}}</textarea>
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<input class="btn btn-primary" name="commit" type="submit" value="Save changes">		
+				<input class="btn btn-danger" name="cancel" data-dismiss="modal" type="reset" value="Cancel"></div>
+
+		</form>
+
+	</div>
+
+</div>
