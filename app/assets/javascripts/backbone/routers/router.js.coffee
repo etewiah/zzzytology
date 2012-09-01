@@ -1,6 +1,6 @@
 class Zzzytology.Routers.Contents extends Backbone.Router
   routes:
-    '': 'home',
+    'home': 'home',
     'collaborate': 'collaborate',
     'words': 'words'
 
@@ -22,6 +22,6 @@ class Zzzytology.Routers.Contents extends Backbone.Router
 
   home: ->
     view = new Zzzytology.Views.PagesHome(model: PageContentColl.where({tab_name: "home"})[0] )
-    $('a[href=#]').tab('show');
+    $('a[href=#home]').tab('show');
     $('#content-container').html(view.render().el)
     $('#comments-container').hide()

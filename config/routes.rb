@@ -1,12 +1,15 @@
 Zzzytology::Application.routes.draw do
 
+
   scope 'api' do
    resources :page_contents
    resources :liffs
   end
   root :to => "Pages#index"
+  
+  match "words", :to => "Words#index"
+  match "words/:word", :to => "Words#index"
   get "pages/index"
-
   get "pages/about"
 
   # The priority is based upon order of creation:

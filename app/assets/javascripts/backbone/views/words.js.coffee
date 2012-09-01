@@ -14,7 +14,7 @@ class Zzzytology.Views.Words extends Backbone.View
     target_hrf = $(e.currentTarget).data("target_word").hrf
     $('#' + target_hrf)[0].scrollIntoView()
     word_router = new Zzzytology.Routers.Words
-    word_router.navigate(target_hrf)
+    word_router.navigate('/words/' + target_hrf)
 
     #$(e.currentTarget).addClass("active")
 

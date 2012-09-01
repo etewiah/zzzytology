@@ -1,0 +1,74 @@
+<div class="row">
+
+	<!-- Start scroll spy -->
+
+	<div class="span3 bs-docs-sidebar" style="margin-top:0px">
+		<ul class="nav nav-list bs-docs-sidenav affix" data-offset-top="180"
+		id="words_navigation_container" style="overflow-y:auto; max-height:800px;top:180px" >
+   {{#words}}
+      <li>{{> word_navigation}}</li>
+    {{/words}}
+
+	    </ul>
+
+	</div>
+	<!-- End scroll spy -->
+
+	<!-- Start scroll content -->
+
+	<div class="span5" style="margin-top:60px" >
+
+		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none; ">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h3 id="myModalLabel">Create a new word</h3>
+			</div>
+
+			<div class="modal-body">
+				<form class="form-horizontal" id="new_word">
+
+					<div class="control-group">
+						<label class="control-label">Word</label>
+						<div class="controls">
+							<input type="text" class="input-xlarge" id="new_word_name" name="name" rel="popover" data-content="Enter your first and last name." data-original-title="Full Name"></div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label">Definition</label>
+						<div class="controls">
+							<textarea class="text span6"
+							      style="width:250px"
+								  rows="10" id="new_word_definition" name="definition" rel="popover" data-content="Enter your first and last name." data-original-title="Full Name"></textarea>
+						</div>
+					</div>
+
+					<div class="modal-footer">
+						<input class="btn btn-primary" name="commit" type="submit" value="Create Word">
+						<input class="btn btn-danger" name="cancel" data-dismiss="modal" type="reset" value="Cancel"></div>
+
+				</form>
+
+			</div>
+
+		</div>
+
+		<ul id="words_scroll" class="thumbnails" style="padding-bottom:500px">
+			{{#each words}}
+			<li class="span5">
+				<section id="{{ word }}">
+					<div class="thumbnail"  style="padding-bottom:25px" >
+						<h3>{{ word }}</h3>
+						{{{ definition }}}
+					</br>
+					<button class="btn btn-mini pull-right edit-word" type="button" >Edit</button>
+				</div>
+			</section>
+		</li>
+		{{/each}}
+
+	</ul>
+
+</div>
+<!-- End scroll content -->
+
+</div>
