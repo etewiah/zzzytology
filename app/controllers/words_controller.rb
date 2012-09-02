@@ -1,6 +1,6 @@
 class WordsController < ApplicationController
   def index
-  	@pagecontent = ""
+  	@words = Liff.order('lower(word)').to_a
   end
 
   def about

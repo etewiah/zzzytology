@@ -12,9 +12,9 @@ gem 'heroku'
 gem "pg", :group => :production
 gem "sqlite3-ruby", :group => :development
 
+gem 'acts-as-taggable-on'
 # adding figaro for ENV configs
 gem "figaro"
-
 gem "haml"
 gem 'twitter-bootstrap-rails'
 

@@ -8,6 +8,6 @@
 <div id="words-container"></div>
 
 
-<%= content_tag "div", "Loadin...", id: "container", data: {entries: Liff.all} do %>
-    <%= render "words", :hbs => {words: Liff.all}, :partials => {:word_navigation => (render "word_navigation")} %> 
+<%= content_tag "div", "Loadin...", id: "container", data: {words: Liff.all } do %>
+    <%= render "words", :hbs => {words: @words}, :partials => {:word_navigation => (render "word_navigation")} %> 
 <% end %>

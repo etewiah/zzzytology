@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//
 //= require underscore.1.3.3.js
 //= require backbone.0.9.2.js
 //= require handlebars
